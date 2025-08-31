@@ -1,10 +1,5 @@
 spring:
-  application:
-    name: activityservice
-  data:
-    mangodb:
-      uri: mongodb://localhost:27017/aiactivityfitness
-      database: aiactivityfitness
-
-server:
-  port: 8082
+    application:
+        name: activity-service
+    config:
+      import: optional:configserver:http://localhost:8888
